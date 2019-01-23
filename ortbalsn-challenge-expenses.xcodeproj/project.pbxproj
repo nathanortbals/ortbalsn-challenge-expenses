@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		44BE02CE21F8E35E00741864 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BE02CD21F8E35E00741864 /* AppDelegate.swift */; };
-		44BE02D021F8E35E00741864 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BE02CF21F8E35E00741864 /* ViewController.swift */; };
 		44BE02D321F8E35E00741864 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44BE02D121F8E35E00741864 /* Main.storyboard */; };
 		44BE02D521F8E35F00741864 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44BE02D421F8E35F00741864 /* Assets.xcassets */; };
 		44BE02D821F8E35F00741864 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44BE02D621F8E35F00741864 /* LaunchScreen.storyboard */; };
 		44BE02E321F8E35F00741864 /* ortbalsn_challenge_expensesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BE02E221F8E35F00741864 /* ortbalsn_challenge_expensesTests.swift */; };
 		44BE02EE21F8E35F00741864 /* ortbalsn_challenge_expensesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BE02ED21F8E35F00741864 /* ortbalsn_challenge_expensesUITests.swift */; };
+		44BE02FC21F8E64E00741864 /* ExpensesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BE02FB21F8E64E00741864 /* ExpensesViewController.swift */; };
+		44BE02FE21F8E66900741864 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BE02FD21F8E66900741864 /* Expense.swift */; };
+		44BE030021F8E77100741864 /* ExpenseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BE02FF21F8E77100741864 /* ExpenseTableViewCell.swift */; };
+		44BE030221F8E9DF00741864 /* ExpensesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BE030121F8E9DF00741864 /* ExpensesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,6 @@
 /* Begin PBXFileReference section */
 		44BE02CA21F8E35E00741864 /* ortbalsn-challenge-expenses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ortbalsn-challenge-expenses.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44BE02CD21F8E35E00741864 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		44BE02CF21F8E35E00741864 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		44BE02D221F8E35E00741864 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		44BE02D421F8E35F00741864 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44BE02D721F8E35F00741864 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,10 @@
 		44BE02E921F8E35F00741864 /* ortbalsn-challenge-expensesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ortbalsn-challenge-expensesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44BE02ED21F8E35F00741864 /* ortbalsn_challenge_expensesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ortbalsn_challenge_expensesUITests.swift; sourceTree = "<group>"; };
 		44BE02EF21F8E35F00741864 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44BE02FB21F8E64E00741864 /* ExpensesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesViewController.swift; sourceTree = "<group>"; };
+		44BE02FD21F8E66900741864 /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
+		44BE02FF21F8E77100741864 /* ExpenseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTableViewCell.swift; sourceTree = "<group>"; };
+		44BE030121F8E9DF00741864 /* ExpensesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +104,14 @@
 			isa = PBXGroup;
 			children = (
 				44BE02CD21F8E35E00741864 /* AppDelegate.swift */,
-				44BE02CF21F8E35E00741864 /* ViewController.swift */,
 				44BE02D121F8E35E00741864 /* Main.storyboard */,
 				44BE02D421F8E35F00741864 /* Assets.xcassets */,
 				44BE02D621F8E35F00741864 /* LaunchScreen.storyboard */,
 				44BE02D921F8E35F00741864 /* Info.plist */,
+				44BE02FB21F8E64E00741864 /* ExpensesViewController.swift */,
+				44BE02FD21F8E66900741864 /* Expense.swift */,
+				44BE02FF21F8E77100741864 /* ExpenseTableViewCell.swift */,
+				44BE030121F8E9DF00741864 /* ExpensesTableViewController.swift */,
 			);
 			path = "ortbalsn-challenge-expenses";
 			sourceTree = "<group>";
@@ -256,8 +265,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44BE02D021F8E35E00741864 /* ViewController.swift in Sources */,
+				44BE030021F8E77100741864 /* ExpenseTableViewCell.swift in Sources */,
+				44BE02FE21F8E66900741864 /* Expense.swift in Sources */,
 				44BE02CE21F8E35E00741864 /* AppDelegate.swift in Sources */,
+				44BE030221F8E9DF00741864 /* ExpensesTableViewController.swift in Sources */,
+				44BE02FC21F8E64E00741864 /* ExpensesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
